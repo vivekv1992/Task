@@ -34,14 +34,10 @@ class MainActivity : AppCompatActivity() {
                 if(response.isSuccessful && response.body()!=null){
                     val imageResponse = response.body()
                     if(imageResponse!= null){
-                        items.add(imageResponse)
-                        binding.recyclerview.adapter = TaskAdapter(imageResponse)
+//                        items.add(imageResponse)
+                        binding.recyclerview.adapter = TaskAdapter(imageResponse,this@MainActivity)
                     }
                 }
-
-
-                
-
 
             }
 
@@ -50,10 +46,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
-
-
-
     }
 
 

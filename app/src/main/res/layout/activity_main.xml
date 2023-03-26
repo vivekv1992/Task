@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:scrollbars="horizontal"
         android:layout_margin="10dp"
+        android:padding="0dp"
         />
 
 </LinearLayout>
