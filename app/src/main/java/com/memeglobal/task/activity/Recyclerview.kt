@@ -33,7 +33,7 @@ class Recyclerview : AppCompatActivity() {
     }
 
     fun getData(){
-        val call:Call<ImageResponse>? = manager.getService()?.getMovies("")
+      /*  val call:Call<ImageResponse>? = manager.getService()?.getMovies("")
         call?.enqueue(object :Callback<ImageResponse>{
             override fun onResponse(call: Call<ImageResponse>, response: Response<ImageResponse>) {
                if (response.isSuccessful && response.body()!= null){
@@ -49,7 +49,7 @@ class Recyclerview : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
 
-        })
+        })*/
     }
 
 //    fun getData(){
